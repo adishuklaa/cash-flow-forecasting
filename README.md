@@ -1,5 +1,7 @@
 # Cash Flow Forecasting Prototype
 
+![Project Screenshot](screenshots/dashboard.png)
+
 ## Product Overview
 An interactive cash-flow forecasting application built with React, TypeScript, and Tailwind CSS. It empowers users to visualize their projected financial runway over 90 days, integrating recurring incomes, expenses, and one-off expenditures. The unique value proposition is the interactive "what-if" scenario modeling, allowing users to toggle specific transactions and adjust macroscopic multipliers to simulate optimistic and conservative market conditions.
 
