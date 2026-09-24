@@ -142,17 +142,3 @@ npm run dev
 ## Future Improvements
 - Add robust date-math library for precise financial scheduling.
 - Implement a backend (Node/Express or Next.js API routes) to persist user scenarios.
-
-## Interview Talking Points
-- **60-sec explanation**: This is an interactive cash-flow simulator that lets users visualize their bank balance over 90 days and instantly test "what-if" scenarios, like losing an income stream or increasing expenses, to prevent accidental overdrafts.
-- **Problem**: People struggle to visualize how today's financial decisions compound over months. 
-- **Decision**: Used client-side deterministic loops for a 90-day array rather than backend computation, prioritizing instant interactive feedback for the user.
-- **Tradeoff**: Sacrificed complex recurrence rules (like "3rd Wednesday of the month") in favor of shipping a fast, understandable MVP.
-- **Tech**: React + Vite for speed, Tailwind for layout, Recharts for the visual data representation.
-- **AI**: Mentioned as a future layer to automatically determine the "optimistic" or "conservative" multipliers based on a user's historical transaction volatility.
-- **Metrics**: Track engagement with the scenario toggles as the primary indicator of feature value.
-- **Next**: Connect to a real backend to persist data, followed by Plaid integration.
-- **Questions**: "How do you handle edge cases in date math?" -> We used `date-fns` for robust baseline date manipulation, but scoped the MVP to simple monthly matching.
-
-## Disclaimer
-Forecasts are simulated estimates based on current scenarios and assumptions. This tool does not provide professional financial advice.
